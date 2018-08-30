@@ -1,0 +1,21 @@
+2018-05-25 14:57:40.533[main]ERRORcom.imooc.o2o.service.impl.WechatAuthServiceImpl-insertPersonInfo error:org.springframework.jdbc.BadSqlGrammarException: 
+### Error updating database.  Cause: com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: Table 'o2o.tb_person_info' doesn't exist
+### The error may involve com.imooc.o2o.dao.PersonInfoDao.insertPersonInfo-Inline
+### The error occurred while setting parameters
+### SQL: INSERT   INTO   tb_person_info(name,gender,email,profile_img,user_type,   create_time,last_edit_time,enable_status)   VALUES   (?,?,?,?,   ?,?,?,?)
+### Cause: com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: Table 'o2o.tb_person_info' doesn't exist
+; bad SQL grammar []; nested exception is com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: Table 'o2o.tb_person_info' doesn't exist
+2018-05-25 14:57:40.547[main]ERRORcom.imooc.o2o.service.impl.WechatAuthServiceImpl-insertWechatAuth error:com.imooc.o2o.exceptions.WechatAuthOperationException: insertPersonInfo error: 
+### Error updating database.  Cause: com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: Table 'o2o.tb_person_info' doesn't exist
+### The error may involve com.imooc.o2o.dao.PersonInfoDao.insertPersonInfo-Inline
+### The error occurred while setting parameters
+### SQL: INSERT   INTO   tb_person_info(name,gender,email,profile_img,user_type,   create_time,last_edit_time,enable_status)   VALUES   (?,?,?,?,   ?,?,?,?)
+### Cause: com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: Table 'o2o.tb_person_info' doesn't exist
+; bad SQL grammar []; nested exception is com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: Table 'o2o.tb_person_info' doesn't exist
+2018-05-25 15:08:18.037[main]ERRORcom.imooc.o2o.service.impl.WechatAuthServiceImpl-insertWechatAuth error:org.springframework.dao.DuplicateKeyException: 
+### Error updating database.  Cause: com.mysql.jdbc.exceptions.jdbc4.MySQLIntegrityConstraintViolationException: Duplicate entry 'dafffgg' for key 'open_id'
+### The error may involve com.imooc.o2o.dao.WechatAuthDao.insertWechatAuth-Inline
+### The error occurred while setting parameters
+### SQL: INSERT   INTO   tb_wechat_auth(user_id,open_id,create_time)   VALUES   (?,?,?)
+### Cause: com.mysql.jdbc.exceptions.jdbc4.MySQLIntegrityConstraintViolationException: Duplicate entry 'dafffgg' for key 'open_id'
+; SQL []; Duplicate entry 'dafffgg' for key 'open_id'; nested exception is com.mysql.jdbc.exceptions.jdbc4.MySQLIntegrityConstraintViolationException: Duplicate entry 'dafffgg' for key 'open_id'
